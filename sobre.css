@@ -1,0 +1,174 @@
+/* Reset básico */
+body, html {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+    height: 100%; /* Garantir que o body ocupe toda a altura da tela */
+    overflow-x: hidden; /* Evitar rolagem horizontal */
+}
+
+/* Navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between; /* Isso distribui os itens entre a esquerda e direita */
+    align-items: center;
+    padding: 15px 30px;
+    background-color: #333;
+    color: #fff;
+    position: fixed; /* Fixa a navbar no topo */
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000; /* Garantir que a navbar fique acima de outros conteúdos */
+    width: 100%; /* Assegura que a navbar ocupe toda a largura da tela */
+    box-sizing: border-box; /* Garante que o padding não afete a largura total */
+}
+
+.navbar .logo {
+    font-size: 30px;
+    font-weight: bold;
+    margin-right: auto; /* Garante que a logo fique na esquerda */
+}
+
+.menu {
+    display: flex;
+    gap: 15px; /* Espaçamento entre os botões */
+    justify-content: flex-end; /* Garante que os botões fiquem alinhados à direita */
+}
+
+.menu button {
+    background-color: #555;
+    color: #fff;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.menu button:hover {
+    background-color: #777;
+}
+/* Conteúdo principal */
+.about-content {
+    text-align: center;
+    margin: 120px auto 0; /* Ajuste da margem superior para compensar a navbar fixa */
+    max-width: 800px; /* Limita a largura do conteúdo */
+    padding: 0 20px;
+    color: #333;
+    width: 100%; /* Garantir que o conteúdo ocupe 100% da largura disponível até o limite */
+}
+
+/* Título */
+.about-content h1 {
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #444;
+}
+
+/* Parágrafos */
+.about-content p {
+    font-size: 18px;
+    line-height: 1.8;
+    margin-bottom: 20px;
+}
+/* Rodapé */
+.footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    position: relative; /* Alterado para não ficar fixo */
+    bottom: 0;
+    width: 100%;
+    font-size: 14px;
+}
+
+/* Links e botões gerais */
+a, button {
+    text-decoration: none;
+    color: inherit;
+    cursor: pointer;
+}
+
+button:focus, a:focus {
+    outline: none;
+}
+
+/* Seção de Projetos */
+.projects {
+    margin-top: 50px;
+    text-align: center;
+}
+
+.projects h2 {
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 30px;
+    color: #444;
+}
+
+.project-images {
+    display: flex;
+    justify-content: center;
+    gap: 20px; /* Espaçamento entre as imagens */
+}
+
+.project-img {
+    width: 200px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+}
+
+.project-img:hover {
+    transform: scale(1.1);
+}
+
+/* Seção de Tecnologias que utilizo */
+.skills {
+    margin-top: 50px;
+}
+
+.skills h2 {
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 30px;
+    color: #444;
+}
+
+.skill-logos {
+    display: flex;
+    justify-content: center;
+    gap: 30px; /* Espaçamento maior entre as imagens */
+    margin-top: 40px; /* Espaçamento entre o título e as imagens */
+}
+
+.skill-logos img {
+    width: 50px; /* Tamanho do ícone */
+    height: auto;
+    transition: transform 0.3s ease;
+}
+
+.skill-logos img:hover {
+    transform: scale(1.1);
+}
+
+.icons {
+    display: flex;
+    justify-content: center;
+    gap: 20px; /* Espaçamento entre os ícones */
+    margin-top: 5px;
+}
+
+.icons i {
+    font-size: 50px; /* Tamanho do ícone */
+    color: #333;
+    transition: transform 0.3s ease;
+}
+
+.icons i:hover {
+    transform: scale(1.2); /* Efeito de zoom ao passar o mouse */
+}
